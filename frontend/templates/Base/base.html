@@ -1,0 +1,368 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-layout-mode="light_mode">
+
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="inventory management, admin dashboard, bootstrap template, invoicing, estimates, business management, responsive admin, POS system">
+	<meta name="author" content="Dreams Technologies">
+	<meta name="robots" content="index, follow">
+	<title>Vinayaga Traders</title>
+
+	<script src="{% static 'assets/js/theme-script.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>	
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+	<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/bootstrap-datetimepicker.min.css' %}' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/plugins/select2/css/select2.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/plugins/daterangepicker/daterangepicker.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/plugins/tabler-icons/tabler-icons.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/plugins/%40simonwep/pickr/themes/nano.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+<body>
+	<div class="main-wrapper">
+		<!-- Header -->
+		<div class="header">
+			<div class="main-header">
+				<!-- Logo -->
+				<div class="header-left active">
+					<a href="index.html" class="logo logo-normal">
+						<img src="{% static 'assets/img/logo.svg' %}" alt="Img">
+					</a>
+					<a href="index.html" class="logo logo-white">
+						<img src="{% static 'assets/img/logo-white.svg' %}" alt="Img">
+					</a>
+					<a href="index.html" class="logo-small">
+						<img src="{% static 'assets/img/logo-small.png' %}" alt="Img">
+					</a>
+				</div>
+				<!-- /Logo -->
+				<a id="mobile_btn" class="mobile_btn" href="#sidebar">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+
+				<!-- Header Menu -->
+				<ul class="nav user-menu">
+
+					<!-- Search -->
+					<li class="nav-item nav-searchinputs">
+						<div class="top-nav-search">
+							<a href="javascript:void(0);" class="responsive-search">
+								<i class="fa fa-search"></i>
+							</a>
+						</div>
+					</li>
+					<!-- /Search -->
+					
+					<li class="nav-item pos-nav">
+						<a href="pos.html" class="btn btn-dark btn-md d-inline-flex align-items-center">
+							<i class="ti ti-device-laptop me-1"></i>POS
+						</a>
+					</li>
+
+					<li class="nav-item nav-item-box">
+						<a href="javascript:void(0);" id="btnFullscreen">
+							<i class="ti ti-maximize"></i>
+						</a>
+					</li>
+					<li class="nav-item nav-item-box">
+						<a href="email.html">
+							<i class="ti ti-mail"></i>
+							<span class="badge rounded-pill">1</span>
+						</a>
+					</li>
+					<!-- Notifications -->
+					<li class="nav-item dropdown nav-item-box">
+						<a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+							<i class="ti ti-bell"></i>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<h5 class="notification-title">Notifications</h5>
+								<a href="javascript:void(0)" class="clear-noti">Mark all as read</a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="Img" src="{% static 'assets/img/profiles/avatar-13.jpg' %}">
+												</span>
+												<div class="flex-grow-1">
+													<p class="noti-details"><span class="noti-title">James Kirwin</span> confirmed his order.  Order No: #78901.Estimated delivery: 2 days</p>
+													<p class="noti-time">4 mins ago</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="Img" src="{% static 'assets/img/profiles/avatar-03.jpg' %}">
+												</span>
+												<div class="flex-grow-1">
+													<p class="noti-details"><span class="noti-title">Leo Kelly</span> cancelled his order scheduled for  17 Jan 2025</p>
+													<p class="noti-time">10 mins ago</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="activities.html" class="recent-msg">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="Img" src="{% static 'assets/img/profiles/avatar-17.jpg' %}">
+												</span>
+												<div class="flex-grow-1">
+													<p class="noti-details">Payment of $50 received for Order #67890 from <span class="noti-title">Antonio Engle</span></p>
+													<p class="noti-time">05 mins ago</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="activities.html" class="recent-msg">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="Img" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
+												</span>
+												<div class="flex-grow-1">
+													<p class="noti-details"><span class="noti-title">Andrea</span> confirmed his order.  Order No: #73401.Estimated delivery: 3 days</p>
+													<p class="noti-time">4 mins ago</p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer d-flex align-items-center gap-3">
+								<a href="#" class="btn btn-secondary btn-md w-100">Cancel</a>
+								<a href="activities.html" class="btn btn-primary btn-md w-100">View all</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Notifications -->
+
+					<li class="nav-item nav-item-box">
+						<a href="general-settings.html"><i class="ti ti-settings"></i></a>
+					</li>
+					<li class="nav-item dropdown has-arrow main-drop profile-nav">
+						<a href="javascript:void(0);" class="nav-link userset" data-bs-toggle="dropdown">
+							<span class="user-info p-0">
+								<span class="user-letter">
+									<img src="{% static 'assets/img/profiles/avator1.jpg' %}" alt="Img" class="img-fluid">
+								</span>
+							</span>
+						</a>
+						<div class="dropdown-menu menu-drop-user">
+							<div class="profileset d-flex align-items-center">
+								<span class="user-img me-2">
+									<img src="{% static 'assets/img/profiles/avator1.jpg' %}" alt="Img">
+								</span>
+								<div>
+									<h6 class="fw-medium">John Smilga</h6>
+									<p>Admin</p>
+								</div>
+							</div>
+							<a class="dropdown-item" href="profile.html"><i class="ti ti-user-circle me-2"></i>MyProfile</a>
+							<a class="dropdown-item" href="sales-report.html"><i class="ti ti-file-text me-2"></i>Reports</a>
+							<a class="dropdown-item" href="general-settings.html"><i class="ti ti-settings-2 me-2"></i>Settings</a>
+							<hr class="my-2">
+							<a class="dropdown-item logout pb-0" href="signin.html"><i class="ti ti-logout me-2"></i>Logout</a>
+						</div>
+					</li>
+				</ul>
+				<!-- /Header Menu -->
+
+				<!-- Mobile Menu -->
+				<div class="dropdown mobile-user-menu">
+					<a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+						aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="profile.html">My Profile</a>
+						<a class="dropdown-item" href="general-settings.html">Settings</a>
+						<a class="dropdown-item" href="signin.html">Logout</a>
+					</div>
+				</div>
+				<!-- /Mobile Menu -->
+			</div>
+		</div>
+		<!-- /Header -->
+
+
+			
+<!-- Sidebar -->
+		<!-- Sidebar -->
+		<div class="sidebar" id="sidebar">
+			<!-- Logo -->
+			<div class="sidebar-logo active">
+				<a href="index.html" class="logo logo-normal">
+					<img src="{% static 'assets/img/logo.svg' %}" alt="Img">
+				</a>
+				<a href="index.html" class="logo logo-white">
+					<img src="{% static 'assets/img/logo-white.svg' %}" alt="Img">
+				</a>
+				<a href="index.html" class="logo-small">
+					<img src="{% static 'assets/img/logo-small.png' %}" alt="Img">
+				</a>
+				<a id="toggle_btn" href="javascript:void(0);">
+					<i data-feather="chevrons-left" class="feather-16"></i>
+				</a>
+			</div>
+			<!-- /Logo -->
+			<div class="modern-profile p-3 pb-0">
+				<div class="text-center rounded bg-light p-3 mb-4 user-profile">
+					<div class="avatar avatar-lg online mb-3">
+						<img src="{% static 'assets/img/customer/customer15.jpg' %}" alt="Img" class="img-fluid rounded-circle">
+					</div>
+					<h6 class="fs-14 fw-bold mb-1">Adrian Herman</h6>
+					<p class="fs-12 mb-0">System Admin</p>
+				</div>
+				<div class="sidebar-nav mb-3">
+					<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified bg-transparent" role="tablist">
+						<li class="nav-item"><a class="nav-link active border-0" href="#">Menu</a></li>
+						<li class="nav-item"><a class="nav-link border-0" href="chat.html">Chats</a></li>
+						<li class="nav-item"><a class="nav-link border-0" href="email.html">Inbox</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-header p-3 pb-0 pt-2">
+				<div class="text-center rounded bg-light p-2 mb-4 sidebar-profile d-flex align-items-center">
+					<div class="avatar avatar-md onlin">
+						<img src="{% static 'assets/img/customer/customer15.jpg' %}" alt="Img" class="img-fluid rounded-circle">
+					</div>
+					<div class="text-start sidebar-profile-info ms-2">
+						<h6 class="fs-14 fw-bold mb-1">Adrian Herman</h6>
+						<p class="fs-12">System Admin</p>
+					</div>
+				</div>
+				<div class="d-flex align-items-center justify-content-between menu-item mb-3">
+					<div>
+						<a href="index.html" class="btn btn-sm btn-icon bg-light">
+							<i class="ti ti-layout-grid-remove"></i>
+						</a>
+					</div>
+					<div>
+						<a href="chat.html" class="btn btn-sm btn-icon bg-light">
+							<i class="ti ti-brand-hipchat"></i>
+						</a>
+					</div>
+					<div>
+						<a href="email.html" class="btn btn-sm btn-icon bg-light position-relative">
+							<i class="ti ti-message"></i>
+						</a>
+					</div>
+					<div class="notification-item">
+						<a href="activities.html" class="btn btn-sm btn-icon bg-light position-relative">
+							<i class="ti ti-bell"></i>
+							<span class="notification-status-dot"></span>
+						</a>
+					</div>
+					<div class="me-0">
+						<a href="general-settings.html" class="btn btn-sm btn-icon bg-light">
+							<i class="ti ti-settings"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Start Sidebar -->
+  <div class="sidebar-inner slimscroll">
+    <div id="sidebar-menu" class="sidebar-menu">
+      <ul>
+        {% for menu in global_menus %}
+          <li class="submenu-open {% if menu.id == active_menu_id %}{% endif %}">
+            <h6 class="submenu-hdr">{{ menu.name }}</h6>
+            <ul>
+              {% for submenu in menu.submenu_list %}
+                {% with submenu.id as sid %}
+                <li class="submenu {% if sid == active_submenu_id %}submenu-open {% endif %}">
+                  {% if submenu.child_list %}
+                    <a href="javascript:void(0);" class="{% if sid == active_submenu_id %}subdrop active{% endif %}">
+                      {% if submenu.icon %}
+                        {% if submenu.icon|slice:":3" == "ti " %}
+                          <i class="{{ submenu.icon }}"></i>
+                        {% else %}
+                          <i data-feather="{{ submenu.icon }}"></i>
+                        {% endif %}
+                      {% endif %}
+                      <span>{{ submenu.name }}</span>
+                      <span class="menu-arrow"></span>
+                    </a>
+                    <ul style="{% if sid == active_submenu_id %}display: block;{% else %}display: none;{% endif %}">
+                      {% for child in submenu.child_list %}
+                        <li>
+                          <a href="{{ child.url }}" class="{% if child.id == active_child_id %}active{% endif %}">
+                            {% if child.icon %}
+                              {% if child.icon|slice:":3" == "ti " %}
+                                <i class="{{ child.icon }}"></i>
+                              {% else %}
+                                <i data-feather="{{ child.icon }}"></i>
+                              {% endif %}
+                            {% endif %}
+                            {{ child.name }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    <a href="{{ submenu.url }}" class="{% if sid == active_submenu_id %}active{% endif %}">
+                      {% if submenu.icon %}
+                        {% if submenu.icon|slice:":3" == "ti " %}
+                          <i class="{{ submenu.icon }}"></i>
+                        {% else %}
+                          <i data-feather="{{ submenu.icon }}"></i>
+                        {% endif %}
+                      {% endif %}
+                      {{ submenu.name }}
+                    </a>
+                  {% endif %}
+                </li>
+                {% endwith %}
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- /Sidebar -->
+
+	<!-- /Main Wrapper -->
+	<script src="{% static 'assets/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js' %}" data-cf-settings="7dc9dfa86907086297b8afe7-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"3ca157e612a14eccbb30cf6db6691c29","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>	
+	<script src="{% static 'assets/js/jquery-3.7.1.min.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/js/feather.min.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/js/jquery.slimscroll.min.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/plugins/apexchart/apexcharts.min.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/plugins/apexchart/chart-data.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/plugins/chartjs/chart.min.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/plugins/chartjs/chart-data.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/js/moment.min.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/plugins/daterangepicker/daterangepicker.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/plugins/select2/js/select2.min.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/plugins/%40simonwep/pickr/pickr.es5.min.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/js/theme-colorpicker.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	<script src="{% static 'assets/js/script.js' %}" type="7dc9dfa86907086297b8afe7-text/javascript"></script>
+	
+	
+</body>
+
+</html>
