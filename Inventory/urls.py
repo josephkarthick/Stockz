@@ -5,7 +5,7 @@ app_name = 'Inventory'
 
 urlpatterns = [
     path('products/', views.product_list, name='product-list'),
-    path('products/create/', views.create_product, name='create_product'),
+    path('products/add/', views.add_product, name='add_product'),
     path('products/category/', views.category, name='category'),
     path('products/sub-category/', views.sub_category, name='sub_category'),
     path('products/brands/', views.brands, name='brands'),

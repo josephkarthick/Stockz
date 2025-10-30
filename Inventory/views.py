@@ -3,8 +3,8 @@ from django.shortcuts import render
 def product_list(request):
     return render(request, 'inventory/product/product-list.html')
     
-def create_product(request):
-    return render(request, 'inventory/product/create-product.html')
+def add_product(request):
+    return render(request, 'inventory/product/product-add.html')
 
 
 def category(request):
